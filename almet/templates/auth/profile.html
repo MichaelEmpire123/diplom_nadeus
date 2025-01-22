@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Профиль</title>
+</head>
+<body>
+    <h1>Профиль пользователя</h1>
+    <p>Добро пожаловать, {{ user.surname }} {{ user.name }}!</p>
+    <p>Email: {{ user.email }}</p>
+    <p>Телефон: {{ user.phone_number }}</p>
+    <a href="{% url 'logout' %}">Выйти</a>
+
+</body>
+</html>
